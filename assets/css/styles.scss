@@ -1,0 +1,76 @@
+@import "../../bower_components/susy/sass/susy";
+
+$blueColor:#2980B9;
+$whiteColor:white;
+$iconSize:130px;
+$largerTextSize:40px;
+
+// <!-- code for grid courtesy of http://www.responsivegridsystem.com/ -->
+  // SECTIONS
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+.fa{
+font-size:$iconSize;
+padding-top: 80px;
+padding-left: 30%;
+}
+
+.largerText{
+  font-size: $largerTextSize;
+  text-align: center;
+}
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	// margin: 1% 0 1% 1.6%;
+  background-color: $whiteColor;
+  height:420px;
+  border:solid 1px;
+  color:$blueColor;
+// font-size: :$iconSize;
+}
+.col:hover{
+  background-color: $blueColor;
+}
+
+.largerText, .fa:hover{
+  color: $whiteColor;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+	width: 100%;
+}
+.span_2_of_3 {
+	width: 66.1%;
+}
+.span_1_of_3 {
+	width: 32.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { margin: 1% 0 1% 0%;}
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}

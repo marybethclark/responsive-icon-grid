@@ -1,0 +1,24 @@
+{
+  "name": "responsive-icon-grid",
+  "homepage": "https://github.com/marybethclark/responsive-icon-grid",
+  "authors": [
+    "MARY BETH CLARK <marybeth.clark@icloud.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "font-awesome": "^4.6.3",
+    "meyer-reset": "*",
+    "susy": "^2.2.12",
+    "bootstrap": "^3.3.6"
+  }
+}
