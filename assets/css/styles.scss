@@ -4,6 +4,7 @@ $blueColor:#2980B9;
 $whiteColor:white;
 $iconSize:130px;
 $largerTextSize:40px;
+$smallerTextSize:20px;
 
 // <!-- code for grid courtesy of http://www.responsivegridsystem.com/ -->
   // SECTIONS
@@ -17,11 +18,24 @@ $largerTextSize:40px;
 font-size:$iconSize;
 padding-top: 80px;
 padding-left: 30%;
-}
 
+color:$blueColor;
+}
+.bar{
+	height:5px;
+	background-color: $blueColor;
+	width:50%;
+	margin:0 auto;
+}
 .largerText{
   font-size: $largerTextSize;
   text-align: center;
+  color:$blueColor;
+}
+.smallerText{
+  font-size: $smallerTextSize;
+  text-align: center;
+  color:$whiteColor;
 }
 /*  COLUMN SETUP  */
 .col {
@@ -36,11 +50,17 @@ padding-left: 30%;
 }
 .col:hover{
   background-color: $blueColor;
+  .largerText, .fa, .smallerText{
+    color: $whiteColor;
+  }
+	.bar{
+		background-color: $whiteColor;
+	}
 }
 
-.largerText, .fa:hover{
-  color: $whiteColor;
-}
+// .largerText, .fa:hover{
+//   color: $whiteColor;
+// }
 .col:first-child { margin-left: 0; }
 
 
