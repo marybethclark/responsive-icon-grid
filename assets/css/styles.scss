@@ -1,33 +1,32 @@
 @import "../../bower_components/susy/sass/susy";
 
-$blueColor:#47a3da;;
-$whiteColor:white;
+$blue:#47a3da;;
+$white:white;
 $iconSize:130px;
 $largerTextSize:40px;
-$smallerTextSize:20px;
+$smallerTextSize:17px;
 $fontFam:'Lato', Calibri, Arial, sans-serif;
 
 // <!-- code for grid courtesy of http://www.responsivegridsystem.com/ -->
-  // SECTIONS
 
 .section {
 	clear: both;
 	padding: 0px;
 	margin: 0px;
 }
+
 .fa{
 font-size:$iconSize;
 padding-top: 80px;
-padding-left: 35%;
-// transform-origin: 3cm 2px;
+padding-left: 30%;
 transition: transform .2s;
-
-color:$blueColor;
+color:$blue;
 }
+
 .bar{
 	height:6px;
 	width:50%;
-	background-color: $blueColor;
+	background-color: $blue;
 	margin:0 auto;
 	transition: transform .2s;
 
@@ -35,35 +34,35 @@ color:$blueColor;
 .largerText{
   font-size: $largerTextSize;
   text-align: center;
-  color:$blueColor;
+  color:$blue;
 	transition: transform .2s;
 	font-family: $fontFam;
 }
 .smallerText{
   font-size: $smallerTextSize;
-  text-align: center;
-  color:$whiteColor;
-	transition: transform .2s;
 	font-family: $fontFam;
+  text-align: center;
+  color:$white;
+	transition: transform .2s;
 }
 /*  COLUMN SETUP  */
 .col {
 	display: block;
 	float:left;
-	// margin: 1% 0 1% 1.6%;
-  background-color: $whiteColor;
+  background-color: $white;
   height:420px;
-  border:solid 1px;
-  color:$blueColor;
-// font-size: :$iconSize;
+  border:solid  #D9DBDC .25px;
+  color:$blue;
+	// margin: 1% 0 1% 1.6%;
 }
+
 .col:hover{
-  background-color: $blueColor;
+  background-color: $blue;
   .largerText, .fa, .smallerText{
-    color: $whiteColor;
+    color: $white;
   }
 	.bar,{
-		background-color: $whiteColor;
+		background-color: $white;
 		transform: translateY(.7in);
 	}
 	.largerText, .smallerText{
@@ -74,11 +73,7 @@ color:$blueColor;
 	}
 }
 
-// .largerText, .fa:hover{
-//   color: $whiteColor;
-// }
 .col:first-child { margin-left: 0; }
-
 
 /*  GROUPING  */
 .group:before,
