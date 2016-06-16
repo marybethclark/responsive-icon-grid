@@ -1,10 +1,11 @@
 @import "../../bower_components/susy/sass/susy";
 
-$blueColor:#2980B9;
+$blueColor:#47a3da;;
 $whiteColor:white;
 $iconSize:130px;
 $largerTextSize:40px;
 $smallerTextSize:20px;
+$fontFam:'Lato', Calibri, Arial, sans-serif;
 
 // <!-- code for grid courtesy of http://www.responsivegridsystem.com/ -->
   // SECTIONS
@@ -17,25 +18,33 @@ $smallerTextSize:20px;
 .fa{
 font-size:$iconSize;
 padding-top: 80px;
-padding-left: 30%;
+padding-left: 35%;
+// transform-origin: 3cm 2px;
+transition: transform .2s;
 
 color:$blueColor;
 }
 .bar{
-	height:5px;
-	background-color: $blueColor;
+	height:6px;
 	width:50%;
+	background-color: $blueColor;
 	margin:0 auto;
+	transition: transform .2s;
+
 }
 .largerText{
   font-size: $largerTextSize;
   text-align: center;
   color:$blueColor;
+	transition: transform .2s;
+	font-family: $fontFam;
 }
 .smallerText{
   font-size: $smallerTextSize;
   text-align: center;
   color:$whiteColor;
+	transition: transform .2s;
+	font-family: $fontFam;
 }
 /*  COLUMN SETUP  */
 .col {
@@ -53,8 +62,15 @@ color:$blueColor;
   .largerText, .fa, .smallerText{
     color: $whiteColor;
   }
-	.bar{
+	.bar,{
 		background-color: $whiteColor;
+		transform: translateY(.7in);
+	}
+	.largerText, .smallerText{
+		transform: translateY(-.3in);
+	}
+	.fa{
+		transform: translateY(.15in);
 	}
 }
 
