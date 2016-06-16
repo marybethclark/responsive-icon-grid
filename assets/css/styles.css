@@ -6,11 +6,30 @@
 .fa {
   font-size: 130px;
   padding-top: 80px;
-  padding-left: 30%; }
+  padding-left: 30%;
+  transition: transform .2s;
+  color: #47a3da; }
+
+.bar {
+  height: 6px;
+  width: 50%;
+  background-color: #47a3da;
+  margin: 0 auto;
+  transition: transform .2s; }
 
 .largerText {
   font-size: 40px;
-  text-align: center; }
+  text-align: center;
+  color: #47a3da;
+  transition: transform .2s;
+  font-family: "Lato", Calibri, Arial, sans-serif; }
+
+.smallerText {
+  font-size: 17px;
+  font-family: "Lato", Calibri, Arial, sans-serif;
+  text-align: center;
+  color: white;
+  transition: transform .2s; }
 
 /*  COLUMN SETUP  */
 .col {
@@ -18,14 +37,20 @@
   float: left;
   background-color: white;
   height: 420px;
-  border: solid 1px;
-  color: #2980B9; }
+  border: solid  #D9DBDC .25px;
+  color: #47a3da; }
 
 .col:hover {
-  background-color: #2980B9; }
-
-.largerText, .fa:hover {
-  color: white; }
+  background-color: #47a3da; }
+  .col:hover .largerText, .col:hover .fa, .col:hover .smallerText {
+    color: white; }
+  .col:hover .bar {
+    background-color: white;
+    transform: translateY(0.7in); }
+  .col:hover .largerText, .col:hover .smallerText {
+    transform: translateY(-0.3in); }
+  .col:hover .fa {
+    transform: translateY(0.15in); }
 
 .col:first-child {
   margin-left: 0; }
